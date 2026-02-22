@@ -1,6 +1,10 @@
 import { useEffect } from 'react'
 import { useWeatherStore } from './store/weatherStore.js'
 import SearchBar from './components/SearchBar.jsx'
+import WeatherCard from './components/WeatherCard.jsx'
+import ErrorMessage from './components/ErrorMessage.jsx'
+import Loading from './components/LoadingState.jsx'
+import RefreshButton from './components/RefreshButton.jsx'
 import './App.css'
 
 export default function App() {

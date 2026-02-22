@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar.jsx'
 import './App.css'
 
 export default function App() {
-  const { city, fetchWeather } = useWeatherStore()
+  const { weather, loading, error, city, fetchWeather } = useWeatherStore()
 
   useEffect(() => {
     if (!city) return
@@ -25,6 +25,10 @@ export default function App() {
       </div>
 
       <SearchBar />
+      {loading && <Loading />}
+      {error && <ErrorMessage message={error} />}
+      {weather && <WeatherCard weather={weather} />}
+      <RefreshButton />
     </div>
   )
 }

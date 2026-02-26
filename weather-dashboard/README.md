@@ -1,16 +1,78 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  Weather Dashboard
 
-Currently, two official plugins are available:
+A responsive and interactive Weather Dashboard built with React JS, Zustand , Axios, and Tailwind CSS.  
+The application allows users to search for real-time weather conditions in various cities using the OpenWeatherMap API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+##  Project Structure
+weather-dashboard/
+│
+├── index.html
+├── vite.config.js
+├── package.json
+├── .env
+│
+├── src/
+│   ├── main.jsx
+│   ├── App.jsx
+│   ├── index.css
+│
+│   ├── components/
+│   │   ├── SearchBar.jsx
+│   │   ├── WeatherCard.jsx
+│   │   ├── ErrorMessage.jsx
+│   │   ├── Loading.jsx
+│   │   └── RefreshButton.jsx
+│
+│   ├── store/
+│   │   └── weatherStore.js
+│
+│   └── services/
+│       └── weatherAPI.js
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+###  City Search
+- Search for any city worldwide.
+- Fetch and display real-time weather data.
 
-## Expanding the ESLint configuration
+### Weather Information Displayed
+- Current Temperature (°C)
+- Humidity (%)
+- Wind Speed (km/h)
+- Weather Condition Icon
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+###  Loading State
+- Displays a loading message while fetching data.
+
+###  Error Handling
+- User-friendly error messages for:
+  - Invalid city names
+  - Network errors
+  - API issues
+
+###  Responsive Design
+- Mobile-first layout
+- Optimized for tablet and desktop screens
+- Built with Tailwind CSS
+- Smooth hover and transition effects
+
+###  Real-Time Updates
+- Automatically refreshes weather data every few minutes.
+- Optional manual refresh functionality.
+
+---
+
+## Tech Stack
+
+- React JS (Vite)
+- Zustand (State Management)
+- Axios (API Requests)
+- Tailwind CSS (Styling)
+- OpenWeatherMap API
+
+##  Author
+
+Debra Mugwe
+Frontend  
+Capstone Project – Weather Dashboard

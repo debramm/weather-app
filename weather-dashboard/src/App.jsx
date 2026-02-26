@@ -19,7 +19,7 @@ export default function App() {
   }, [city, fetchWeather])
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start bg-blue-50 px-4 pt-20">
+<div className="min-h-screen w-full flex flex-col items-center justify-center bg-blue-50 " >
       <div className="flex flex-col items-center mb-12">
         <span className="text-5xl mb-2">🌤</span>
         <h1 className="text-4xl font-bold mb-1">Weather Buddy</h1>
